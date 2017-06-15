@@ -18,7 +18,7 @@
         <module>../yu-service</module>
         <module>../yu-web</module>
     </modules>
-    
+    55
     <build>
         <plugins>  
 		<plugin>  

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >  
+<generatorConfiguration >
+  <classPathEntry location="C:\\Users\\yu.wang@yamaichina.com\\.m2\\repository\\mysql\\mysql-connector-java\\5.1.29\\mysql-connector-java-5.1.29.jar" />    
+  <context id="context1" >  
+   <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+    <jdbcConnection connectionURL="jdbc:mysql://10.188.47.21:3306/auth" driverClass="com.mysql.jdbc.Driver" 
+     userId="arthas_dev" password="Miang521!" />  
+    <javaModelGenerator targetPackage="com.mk.entities" targetProject="ft-entities" />  
+    <sqlMapGenerator targetPackage="com.mk.data.mysql" targetProject="ft-data-mysql" ></sqlMapGenerator>  
+    <javaClientGenerator targetPackage="com.mk.dao" targetProject="ft-data-mysql" type="XMLMAPPER" />  
+    
+    <table tableName="acct_auth_info" domainObjectName="AcctAuthInfo" catalog="auth"/>
+  </context>
+   
+</generatorConfiguration> 
